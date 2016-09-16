@@ -1,1 +1,2 @@
-# coursera-spa-with-angularjs
+**Single Page Web Application with AngularJS:**
+- Module 1: Introduction to AngularJS

@@ -45,9 +45,8 @@
                   var found = [];
                   if (searchTerm.length !== 0) {
                     menu.forEach(function(item) {
-                      if (item.description.toLowerCase().indexOf(searchTerm) >= 0) {
+                      if (item.description.toLowerCase().indexOf(searchTerm) !== -1) {
                           found.push(item);
-                          console.log('description:', '"' + item.description + '"');
                       }
                     });
                   }

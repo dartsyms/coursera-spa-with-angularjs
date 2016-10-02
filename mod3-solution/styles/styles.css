@@ -50,3 +50,14 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+/* For found items template */
+.menu {
+  float: left;
+  clear: both;
+}
+.message {
+  color: red;
+}
+.desc {
+  float: left;
+}

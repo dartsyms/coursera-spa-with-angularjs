@@ -1,7 +1,7 @@
 <table>
     <caption>Found {{found.items.length}} item(s)</caption>
     <tr>
-        <th>Ord.Nr.</th>
+        <th>Ord.</th>
         <th>Title</th>
         <th>Code</th>
         <th>Description</th>
@@ -12,6 +12,6 @@
         <td>{{item.name}}</td>
         <td>{{item.short_name}}</td>
         <td>{{item.description}}</td>
-        <td><button class="btn btn-default" ng-click="found.onRemove({index: $index})">Agree</button></td>
+        <td><button class="btn btn-info" ng-click="found.onRemove({index: $index})">Agree</button></td>
     </tr>
 </table>

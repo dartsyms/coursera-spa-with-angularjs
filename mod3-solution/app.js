@@ -27,6 +27,10 @@
       menu.removeItem = function(index) {
         menu.found.splice(index, 1);
       };
+
+      menu.isEmpty = function () {
+        return menu.found.length == 0;
+      }
     }
 
     MenuService.$inject = ['$http', 'ApiBasePath'];
@@ -57,7 +61,6 @@
         scope: {
           items: '<',
           onRemove: '&',
-          showError:'<'
         },
         controller: MenuChoiceController,
         controllerAs: 'found',

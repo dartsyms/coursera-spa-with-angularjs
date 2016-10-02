@@ -51,6 +51,9 @@ input[type="text"] {
   }
 }
 /* For found items template */
+div > found-items {
+  float: left;
+}
 table {
   border-collapse: collapse;
 }

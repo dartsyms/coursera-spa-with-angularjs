@@ -23,8 +23,10 @@
     <items-loader-indicator></items-loader-indicator>
 
     <!-- found-items should be implemented as a component -->
-    <found-items ng-show="!menu.isEmpty();" class="menu" items="menu.found" on-remove="menu.removeItem(index)"></found-items>
-    <h3 ng-if='menu.isError' class='error'>Nothing found</div>
+    <div>
+      <found-items ng-show="!menu.isEmpty();" class="menu" items="menu.found" on-remove="menu.removeItem(index)"></found-items>
+      <h3 ng-if='menu.isError' class='error'>Nothing found</h3>
+    </div>
   </div>
 
 </body>

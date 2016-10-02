@@ -1,5 +1,5 @@
 <ol ng-if='!found.isError'>
-  <li ng-repeat="item in found.foundItems " >
+  <li ng-repeat="item in found.items " >
     <div class='name'> Name: {{item.name}} Short name: {{item.short_name}} </div>
     <div class='desc'>{{item.description}}</div>
     <button ng-click="found.onRemove({index: $index});">Remove Item</button>

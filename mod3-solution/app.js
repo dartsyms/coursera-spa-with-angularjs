@@ -55,7 +55,7 @@
       var ddo = {
         templateUrl: 'found.template.html',
         scope: {
-          foundItems: '<',
+          items: '<',
           onRemove: '&',
           showError:'<'
         },

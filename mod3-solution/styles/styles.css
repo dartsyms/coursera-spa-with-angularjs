@@ -70,5 +70,6 @@ td {
 .error {
   color: red;
   margin-top: 1em;
-  margin-left: 1em;
+  float:left;
+  clear: both;
 }

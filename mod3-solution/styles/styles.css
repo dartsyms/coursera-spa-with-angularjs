@@ -70,4 +70,5 @@ td {
 .error {
   color: red;
   margin-top: 1em;
+  float: left;
 }

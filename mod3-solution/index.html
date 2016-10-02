@@ -25,7 +25,7 @@
     <!-- found-items should be implemented as a component -->
     <div>
       <found-items ng-show="!menu.isEmpty();" items="menu.found" on-remove="menu.removeItem(index)"></found-items>
-      <div class=""><h3 ng-if='menu.isError' class='error'> Nothing found!</h3></div>
+      <div class='error'><h3 ng-if='menu.isError'> Nothing found!</h3></div>
     </div>
   </div>
 

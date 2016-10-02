@@ -51,13 +51,20 @@ input[type="text"] {
   }
 }
 /* For found items template */
-.menu {
-  float: left;
-  clear: both;
+table {
+  border-collapse: collapse;
 }
-.message {
+
+th, td {
+  border: 1px solid gray;
+  padding: 1em;
+}
+
+td {
+  vertical-align: top;
+}
+
+.error {
   color: red;
-}
-.desc {
-  float: left;
+  margin-top: 1em;
 }

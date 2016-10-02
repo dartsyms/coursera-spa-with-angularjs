@@ -45,7 +45,7 @@
                   var found = [];
                   if (searchTerm.length !== 0) {
                     menu.forEach(function(item) {
-                      if (item.description.toLowerCase().indexOf(searchTerm) !== -1) {
+                      if (item.description.toLowerCase().indexOf(searchTerm) >= 0) {
                           found.push(item);
                       }
                     });

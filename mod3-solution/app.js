@@ -26,6 +26,7 @@
 
       menu.removeItem = function(index) {
         menu.found.splice(index, 1);
+        menu.isError = (menu.found.length === 0) ? true : false;
       };
 
       menu.isEmpty = function () {

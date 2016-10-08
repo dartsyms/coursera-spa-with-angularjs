@@ -2,10 +2,10 @@
   'use restrict';
 
   angular.module('MenuApp')
-  .component('items', {
+    .component('items', {
       templateUrl: 'templates/items.template.html',
       binding: {
-          items: '<'
+          itemsList: '<'
       }
   });
 

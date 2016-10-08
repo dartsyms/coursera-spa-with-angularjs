@@ -2,13 +2,13 @@
   'use strict';
 
   angular.module('MenuApp')
-  .controller('ItemsController', ItemsController);
+    .controller('ItemsController', ItemsController);
 
-  ItemsController.$inject = ['items'];
-  function ItemsController(items) {
+  ItemsController.$inject = ['itemsList'];
+  function ItemsController(itemsList) {
       var ctrl = this;
-      ctrl.items = items.menu_items;
-      ctrl.categoryName = items.category.name;
+      ctrl.items = itemsList.menu_items;
+      ctrl.categoryName = itemsList.category.name;
   };
 
 })();

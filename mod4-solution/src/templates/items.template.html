@@ -1,16 +1,20 @@
-<a ui-sref="home">Menu Home </a> &lt; <a ui-sref="categories"> Categories</a> &lt; {{ ctrl.categoryName }}
-<table>
-    <tr>
-        <th>Title</th>
-        <th>Code</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
+<ol class="breadcrumb">
+  <li><a ui-sref="home"><span class="lead">Menu Home </span></a></li>
+  <li><a ui-sref="categories"><span class="lead">Categories</a></span></li>
+  <li class="active"><span class="lead">{{ ctrl.categoryName }}</span></li>
+</ol>
+<div class="table-responsive">
+  <table class="table table-bordered">
+      <tr>
+          <th>Title</th>
+          <th>Code</th>
+          <th>Description</th>
+      </tr>
 
-    <tr ng-repeat="item in ctrl.items">
-        <td>{{ item.name }}</td>
-        <td>{{ item.short_name }}</td>
-        <td>{{ item.description }}</td>
-        <td><span ng-show="{{item.price_small !== undefined}}">{{ item.price_small | currency}} - </span>{{ item.price_large | currency }}</td>
-    </tr>
-</table>
+      <tr ng-repeat="item in ctrl.items">
+          <td>{{ item.name }}</td>
+          <td>{{ item.short_name }}</td>
+          <td>{{ item.description }}</td>
+      </tr>
+  </table>
+</div>

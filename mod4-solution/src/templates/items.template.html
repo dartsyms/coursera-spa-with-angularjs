@@ -1,14 +1,14 @@
 <ol class="breadcrumb">
   <li><a ui-sref="home"><span class="lead">Menu Home</span></a></li>
   <li><a ui-sref="categories"><span class="lead">Categories</a></span></li>
-  <li class="active"><span class="lead">{{ ctrl.categoryName }}</span></li>
+  <li class="active"><span class="lead">{{ ctrl.categoryName }}</span><span class="badge">{{ ctrl.items.length }}</span></li>
 </ol>
 <div class="table-responsive">
   <table class="table table-bordered">
       <tr>
-          <th class="lead">Title</th>
-          <th class="lead">Code</th>
-          <th class="lead">Description</th>
+          <th>Title</th>
+          <th>Item Code</th>
+          <th>Description</th>
       </tr>
 
       <tr ng-repeat="item in ctrl.items">

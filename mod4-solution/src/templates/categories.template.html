@@ -6,8 +6,8 @@
 <div class="table-responsive">
   <table class="table table-bordered">
       <tr>
-          <th class="lead">Category</th>
-          <th class="lead">Short Name</th>
+          <th>Category</th>
+          <th>Cat. Code</th>
       </tr>
       <tr ng-repeat="category in ctrl.catList">
           <td><a ui-sref="items({ shortName: category.short_name })">{{ category.name }}</a></td>

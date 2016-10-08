@@ -11,6 +11,6 @@
         <td>{{ item.name }}</td>
         <td>{{ item.short_name }}</td>
         <td>{{ item.description }}</td>
-        <td>{{ item.price_small | currency}} - {{ item.price_large | currency }}</td>
+        <td><span ng-show="{{item.price_small !== undefined}}">{{ item.price_small | currency}} - </span>{{ item.price_large | currency }}</td>
     </tr>
 </table>

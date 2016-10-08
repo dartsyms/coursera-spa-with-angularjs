@@ -1,0 +1,16 @@
+<a ui-sref="home">Menu Home </a> &lt; <a ui-sref="categories"> Categories</a> &lt; {{ ctrl.categoryName }}
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Code</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+
+    <tr ng-repeat="item in ctrl.items">
+        <td>{{ item.name }}</td>
+        <td>{{ item.short_name }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.price_small | currency}} - {{ item.price_large | currency }}</td>
+    </tr>
+</table>

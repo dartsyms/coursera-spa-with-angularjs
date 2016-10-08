@@ -20,8 +20,7 @@
         controller: 'MenuCategoryController as ctrl',
         resolve: {
             catList: ['MenuDataService', function (MenuDataService) {
-                var result = MenuDataService.getAllCategories();
-                return result;
+                return MenuDataService.getAllCategories();
             }]
         }
       })
@@ -31,8 +30,7 @@
         controller: 'ItemsController as ctrl',
         resolve: {
             itemsList: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
-                var result =  MenuDataService.getItemsForCategory($stateParams.shortName);
-                return result;
+                return  MenuDataService.getItemsForCategory($stateParams.shortName);
             }]
         }
       });

@@ -2,3 +2,7 @@ h1 {
   font-size: 1.5em;
   text-transform: uppercase;
 }
+
+.badge {
+  padding-left: 10px;
+}

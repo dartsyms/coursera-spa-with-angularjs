@@ -42,11 +42,11 @@ function routeConfig ($stateProvider) {
       }
     })
     .state('public.signup', {
-      url: '/singup',
+      url: '/signup',
       templateUrl: 'src/public/signup/signup.html'
     })
-    .state('public.myinfo', {
-      url: '/myinfo',
+    .state('public.info', {
+      url: '/info',
       templateUrl: 'src/public/info/info.html'
     });
 }

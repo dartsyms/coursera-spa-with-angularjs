@@ -1,0 +1,24 @@
+<div class="container signup" ng-controller="InfoController as $ctrl">
+  <span ng-show="!$ctrl.isSignedUp()">Not Signed Up.<a ui-sref="public.signup">Sign Up.</a></span>
+  <fieldset ng-show="$ctrl.isSignedUp()">
+    <h3>You are already signed up.</h3>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <label class="control-label col-lg-2 col-md-2 col-sm-3 col-xs-2">Name:</label>
+      <span class="col-lg-10 col-md-10 col-sm-9 col-xs-8col-xxs-12">{{$ctrl.data.firstName}} {{$ctrl.data.surName}}</span>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <label class="control-label col-lg-2 col-md-2 col-sm-3 col-xs-2">Email:</label>
+      <span class="col-lg-10 col-md-10 col-sm-9 col-xs-8col-xxs-12">{{$ctrl.data.email}}</span>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <label class="control-label col-lg-2 col-md-2 col-sm-3 col-xs-2">Phone:</label>
+      <span class="col-lg-10 col-md-10 col-sm-9 col-xs-8 col-xxs-12">({{$ctrl.data.phone.area}}) {{$ctrl.data.phone.number}}</span>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <label class="control-label col-lg-2 col-md-2 col-sm-3 col-xs-2">Choice Dish:</label>
+      <span class="col-lg-10 col-md-10 col-sm-9col-xs-10">{{$ctrl.data.dishChoice}}</span>
+    </div>
+  </fieldset>
+  <br>
+  <menu-item ng-show="!!$ctrl.data.dishChoice" menu-item="$ctrl.data.dish"></menu-item>
+</div>

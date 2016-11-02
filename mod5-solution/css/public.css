@@ -183,3 +183,17 @@ h3.menu-item-title {
     width: 100%;
   }
 }
+
+.msgblock {
+    color: #F6B319;
+    margin: -1em 1em 1em;
+}
+
+.signup-form {
+    background: #3B4E2F;
+    padding: 2em;
+}
+
+.success-msg {
+    margin-top: 1.6em;
+}

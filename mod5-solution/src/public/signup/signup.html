@@ -42,14 +42,14 @@
         </div>
         <div class="form-group">
           <!-- <label for="area" class="col-lg-3 col-md-3 col-sm-3 hidden-xs control-label">Phone:</label> -->
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
             <div class="input-group">
               <div class="input-group-addon">(</div>
               <input type="tel" class="form-control" id="area" name="area" ng-model="ctrl.data.phone.area" placeholder="Area ###" pattern="\d{3}" maxlength="3" required>
               <div class="input-group-addon">)</div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-5 col-xs-7">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
             <input type="tel" class="form-control" id="phone" name="phone" ng-model="ctrl.data.phone.number" placeholder="Phone ###-####" pattern="\d{3}-\d{4}" maxlength="8" required>
           </div>
         </div>
@@ -61,18 +61,16 @@
         </div>
         <div class="form-group">
           <!-- <label for="dishchoice" class="col-lg-3 col-md-3 col-sm-3 hidden-xs control-label">Dish Choice:</label> -->
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
             <input type="text" class="form-control" id="dishchoice" name="dishchoice" ng-model="ctrl.data.dishChoice" placeholder="Dish Of Choice" pattern="^[a-zA-Z]{1,2}\d{1,2}$" maxlength="20">
           </div>
         </div>
       </fieldset>
       <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-          <button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid">Subscript for news
-          </button>
+        <div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+          <button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid">Subscript for news</button>
         </div>
       </div>
-
       <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
         <div class="msgblock success-msg" ng-show="ctrl.isChecked">
           <span ng-show="ctrl.isSignedUp" class="glyphicon glyphicon-ok"></span>

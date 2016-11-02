@@ -22,7 +22,7 @@
         service.setSignUp = function (data) {
             signUp = data;
             MenuService.getDish(data.dishChoice).then(function (response) {
-                signUpData.dish = response.data;
+                signUp.dish = response.data;
               }
             );
         }

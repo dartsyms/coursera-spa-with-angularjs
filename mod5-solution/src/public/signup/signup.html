@@ -38,14 +38,12 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
                 <input type="tel" class="form-control" id="area" name="area" ng-model="ctrl.data.phone.area" placeholder="Area ###" pattern="\d{3}" maxlength="3" required>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
               <input type="tel" class="form-control" id="phone" name="phone" ng-model="ctrl.data.phone.number" placeholder="Phone ###-####" pattern="\d{3}-\d{4}" maxlength="8" required>
             </div>
-          </div>
         </div>
         <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
           <div class="msgblock" ng-show="!ctrl.isSignedUp && signupForm.area.$error.required && !signupForm.area.$pristine || signupForm.phone.$error.required && !signupForm.phone.$pristine">

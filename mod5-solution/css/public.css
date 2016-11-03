@@ -200,5 +200,6 @@ h3.menu-item-title {
 }
 
 .success-msg {
+    color: green;
     margin-top: 1.6em;
 }

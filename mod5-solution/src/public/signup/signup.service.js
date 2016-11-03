@@ -12,7 +12,6 @@
             surName: '',
             email: '',
             phone: {
-                area: '',
                 number: ''
             },
             dishChoice: '',

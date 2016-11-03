@@ -161,7 +161,7 @@ h3.menu-item-title {
     text-align: center;
   }
   .menu-item-description {
-    text-align: center;;
+    text-align: center;
   }
 }
 
@@ -182,6 +182,10 @@ h3.menu-item-title {
     float: left;
     width: 100%;
   }
+}
+
+#area, #phone {
+  float: left;
 }
 
 .msgblock {

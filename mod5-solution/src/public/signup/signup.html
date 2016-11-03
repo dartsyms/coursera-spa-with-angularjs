@@ -4,8 +4,7 @@
       <fieldset>
         <h3 class="lead signup-text">Sign up for our non-existent news</h3>
         <div class="form-group">
-          <label for="firstname" class="control-label col-lg-3 col-md-3 col-sm-3 hidden-xs"></label>
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" pattern="^[a-zA-Z]+$" ng-model="ctrl.data.firstName" required>
           </div>
         </div>
@@ -16,8 +15,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="surtname" class="control-label col-lg-3 col-md-3 col-sm-3 hidden-xs"></label>
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <input type="text" class="form-control" id="surname" name="surname" placeholder="Last Name" pattern="^[a-zA-Z]+$" ng-model="ctrl.data.surName" required>
           </div>
         </div>
@@ -28,8 +26,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="email" class="control-label col-lg-3 col-md-3 col-sm-3 hidden-xs"></label>
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="ctrl.data.email" required>
           </div>
         </div>
@@ -41,7 +38,6 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="area" class="control-label col-lg-3 col-md-3 col-sm-3 hidden-xs"></label>
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
               <input type="tel" class="form-control" id="area" name="area" ng-model="ctrl.data.phone.area" placeholder="Area ###" pattern="\d{3}" maxlength="3" required>
           </div>
@@ -56,14 +52,13 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="dishchoice" class="control-label col-lg-3 col-md-3 col-sm-3 hidden-xs"></label>
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <input type="text" class="form-control" id="dishchoice" name="dishchoice" ng-model="ctrl.data.dishChoice" placeholder="Dish Of Choice (Code)" pattern="^[a-zA-Z]{1,2}\d{1,2}$" maxlength="4">
           </div>
         </div>
       </fieldset>
       <div class="form-group">
-        <div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <button type="submit" class="btn btn-default" ng-disabled="signupForm.$invalid">Subscript for news</button>
         </div>
       </div>

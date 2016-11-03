@@ -20,27 +20,27 @@
         $ctrl.checkInput = function () {
             $ctrl.isChecked = false;
             $ctrl.isSignedUp = true;
-            var dish = $ctrl.data.dishChoice;
-            if (!dish) {
+            var item = $ctrl.data.dishChoice;
+            if (!item) {
                 service.setSignUp($ctrl.data);
                 $ctrl.data = {};
-                $ctrl.data.message = "Info Saved.";
+                $ctrl.data.message = "Info Saved. You have not choosen a favorite dish from menu.";
                 $scope.signupForm.$setPristine();
                 $ctrl.isChecked = true;
                 return;
             }
 
-            MenuService.dishExists(dish).then(function (result) {
+            MenuService.dishExists(item).then(function (result) {
                 if (result) {
                     $timeout(function () {
                         service.setSignUp($ctrl.data);
                         $ctrl.data = {};
-                        $ctrl.data.message = "Info Saved.";
+                        $ctrl.data.message = "Info Saved. Your favorite dish is found in menu.";
                         $scope.signupForm.$setPristine();
                         $ctrl.isChecked = true;
                     });
                 } else {
-                    $ctrl.data.message = "There is no such choice in our menu.";
+                    $ctrl.data.message = "There is no such choice in our menu. Check out the code.";
                     $ctrl.isSignedUp = false;
                     $ctrl.isChecked = true;
                 }

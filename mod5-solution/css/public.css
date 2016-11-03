@@ -184,6 +184,9 @@ h3.menu-item-title {
   }
 }
 
+#area {
+  padding-top: 5px;
+}
 
 .msgblock {
     color: #F6B319;

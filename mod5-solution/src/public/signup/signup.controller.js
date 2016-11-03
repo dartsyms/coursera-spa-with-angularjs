@@ -60,7 +60,7 @@
         });
 
         $ctrl.capitalizeWord = function (word) {
-            return word.toLowerCase().substring(0, 1).toUpperCase() + word.toLowerCase().substring(1);
+            return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
         }
     }
 })();

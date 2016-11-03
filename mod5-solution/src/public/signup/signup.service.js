@@ -22,8 +22,7 @@
             signUp = data;
             MenuService.getDish(data.dishChoice).then(function (response) {
                 signUp.dish = response.data;
-              }
-            );
+            });
         }
 
         service.getSignUp = function () {

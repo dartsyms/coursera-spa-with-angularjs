@@ -4,7 +4,7 @@
       <fieldset>
         <h3 class="lead signup-text">Sign up for our non-existent news</h3>
         <div class="form-group">
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" pattern="^[a-zA-Z]+$" ng-model="ctrl.data.firstName" required>
           </div>
         </div>
@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
             <input type="text" class="form-control" id="surname" name="surname" placeholder="Last Name" pattern="^[a-zA-Z]+$" ng-model="ctrl.data.surName" required>
           </div>
         </div>
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
             <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="ctrl.data.email" required>
           </div>
         </div>
@@ -38,12 +38,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
             <div class="form-group">
               <input type="tel" class="form-control" id="area" name="area" ng-model="ctrl.data.phone.area" placeholder="Area ###" pattern="\d{3}" maxlength="3" required>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <div class="form-group">
               <input type="tel" class="form-control" id="phone" name="phone" ng-model="ctrl.data.phone.number" placeholder="Phone ###-####" pattern="\d{3}-\d{4}" maxlength="8" required>
             </div>
@@ -56,13 +56,13 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
             <input type="text" class="form-control" id="dishchoice" name="dishchoice" ng-model="ctrl.data.dishChoice" placeholder="Dish Of Choice (Code)" pattern="^[a-zA-Z]{1,2}\d{1,2}$" maxlength="4">
           </div>
         </div>
       </fieldset>
       <div class="form-group">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
           <button type="submit" class="btn btn-default" ng-disabled="signupForm.$invalid">Subscript for news</button>
         </div>
       </div>

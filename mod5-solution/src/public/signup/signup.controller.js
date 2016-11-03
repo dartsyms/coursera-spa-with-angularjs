@@ -12,22 +12,21 @@
         $ctrl.isChecked = false;
 
         $ctrl.signUp = function () {
-            $ctrl.data.firstName = $ctrl.firstLetterToUpperCase($ctrl.data.firstName);
-            $ctrl.data.lastName = $ctrl.firstLetterToUpperCase($ctrl.data.surName);
-            $ctrl.checkData();
+            $ctrl.data.firstName = $ctrl.capitalizeWord($ctrl.data.firstName);
+            $ctrl.data.lastName = $ctrl.capitalizeWord($ctrl.data.surName);
+            $ctrl.checkInput();
         }
 
-        $ctrl.checkData = function () {
+        $ctrl.checkInput = function () {
             $ctrl.isChecked = false;
             $ctrl.isSignedUp = true;
             var dish = $ctrl.data.dishChoice;
             if (!dish) {
                 service.setSignUp($ctrl.data);
                 $ctrl.data = {};
-                $ctrl.data.message = "Saved.";
+                $ctrl.data.message = "Info Saved.";
                 $scope.signupForm.$setPristine();
                 $ctrl.isChecked = true;
-
                 return;
             }
 
@@ -36,12 +35,12 @@
                     $timeout(function () {
                         service.setSignUp($ctrl.data);
                         $ctrl.data = {};
-                        $ctrl.data.message = "Saved.";
+                        $ctrl.data.message = "Info Saved.";
                         $scope.signupForm.$setPristine();
                         $ctrl.isChecked = true;
                     });
                 } else {
-                    $ctrl.data.message = "There is no such choice.";
+                    $ctrl.data.message = "There is no such choice in our menu.";
                     $ctrl.isSignedUp = false;
                     $ctrl.isChecked = true;
                 }
@@ -60,14 +59,8 @@
             }
         });
 
-        $ctrl.firstLetterToUpperCase = function (data) {
-            if (data) {
-                var tmp = data.toLowerCase();
-                tmp = tmp.substring(0, 1).toUpperCase() + tmp.substring(1);
-                return tmp;
-            } else {
-                return data;
-            }
+        $ctrl.capitalizeWord = function (word) {
+            return word.toLowerCase().substring(0, 1).toUpperCase() + word.toLowerCase().substring(1);
         }
     }
 })();

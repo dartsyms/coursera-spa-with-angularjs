@@ -47,8 +47,11 @@
           <button type="submit" class="btn btn-default btn-md" ng-disabled="signupForm.$invalid">Subscript for news</button>
         </div>
         <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
-          <div class="success-msg" ng-show="ctrl.isChecked">
+          <div class="success-msg" ng-show="ctrl.isChecked && ctrl.isSignedUp">
             <span ng-show="ctrl.isSignedUp" class="glyphicon glyphicon-ok"></span>
+            <span>{{ctrl.data.message}}</span>
+          </div>
+          <div class="msgblock" ng-show="ctrl.isChecked && !ctrl.isSignedUp">
             <span ng-show="!ctrl.isSignedUp" class="glyphicon glyphicon-remove"></span>
             <span>{{ctrl.data.message}}</span>
           </div>

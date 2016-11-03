@@ -194,6 +194,10 @@ h3.menu-item-title {
     padding: 2em;
 }
 
+.signup-text {
+  color: #F6B319;
+}
+
 .success-msg {
     margin-top: 1.6em;
 }

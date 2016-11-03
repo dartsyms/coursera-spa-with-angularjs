@@ -13,7 +13,7 @@
 
         $ctrl.signUp = function () {
             $ctrl.data.firstName = $ctrl.capitalizeWord($ctrl.data.firstName);
-            $ctrl.data.lastName = $ctrl.capitalizeWord($ctrl.data.surName);
+            $ctrl.data.surName = $ctrl.capitalizeWord($ctrl.data.surName);
             $ctrl.checkInput();
         }
 
